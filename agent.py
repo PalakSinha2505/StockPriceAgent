@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
-from langchain.agents import create_tool_calling_agent, AgentExecutor
+from langchain_classic.agents import create_tool_calling_agent, AgentExecutor
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from tools import get_stock_price, search_ticker
 
