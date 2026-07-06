@@ -8,12 +8,12 @@ from tools import get_stock_price, search_ticker
 # Load environment variables from .env file
 load_dotenv()
 
-def create_stock_agent(model_name: str = "llama3-70b-8192", temperature: float = 0.0) -> AgentExecutor:
+def create_stock_agent(model_name: str = "llama-3.1-8b-instant", temperature: float = 0.0) -> AgentExecutor:
     """
     Initializes and returns the Stock Price Agent executor.
     
     Args:
-        model_name: The name of the Groq LLM model to use (default: llama3-70b-8192)
+        model_name: The name of the Groq LLM model to use (default: llama-3.1-8b-instant)
         temperature: LLM temperature setting (default: 0.0)
         
     Returns:

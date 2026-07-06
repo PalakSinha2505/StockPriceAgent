@@ -31,8 +31,8 @@ def run_interactive(agent):
 def main():
     parser = argparse.ArgumentParser(description="Stock Price AI Agent using LangChain and Groq API.")
     parser.add_argument("query", nargs="?", type=str, help="A single query to run instead of interactive mode.")
-    parser.add_argument("--model", type=str, default="llama3-70b-8192", 
-                        help="Groq LLM model name (default: llama3-70b-8192)")
+    parser.add_argument("--model", type=str, default="llama-3.1-8b-instant", 
+                        help="Groq LLM model name (default: llama-3.1-8b-instant)")
     parser.add_argument("--temp", type=float, default=0.0, 
                         help="LLM temperature (default: 0.0)")
                         
